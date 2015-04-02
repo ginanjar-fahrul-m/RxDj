@@ -1,0 +1,12 @@
+*.iml
+.DS_Store
+
+# Local configuration file (sdk path, etc)
+/local.properties
+
+## Directory-based project format:
+/.idea
+
+# Gradle files
+.gradle/
+build/
