@@ -27,6 +27,9 @@ public class ListPresenter {
                 .getCollections()
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(collections -> view.displaySongs(collections));
+
+                /*
                 .subscribe(new Observer<List<Collections>>() {
                     @Override
                     public void onCompleted() {
@@ -43,5 +46,6 @@ public class ListPresenter {
                         view.displaySongs(collections);
                     }
                 });
+                */
     }
 }
