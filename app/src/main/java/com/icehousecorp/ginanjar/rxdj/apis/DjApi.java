@@ -25,11 +25,11 @@ public interface DjApi {
 
     @PUT("/collections/{id}")
     public Observable<Collections>
-    updateName(@Path("id") String id, String name);
+    updateName(@Path("id") String id, String name, String picture);
 
     @PUT("/collections/{id}")
     public Observable<Collections>
-    updateSong(@Path("id") String id, String song);
+    updateSong(@Path("id") String id, String song, String picture);
 
     @DELETE("/collections/{id}")
     public Observable<Collections>

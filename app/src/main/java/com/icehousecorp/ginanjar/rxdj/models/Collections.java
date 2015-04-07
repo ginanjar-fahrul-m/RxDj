@@ -7,4 +7,5 @@ public class Collections {
     public String id;
     public String name;
     public String song;
+    public String picture;
 }
