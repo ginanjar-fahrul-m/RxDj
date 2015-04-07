@@ -1,6 +1,9 @@
 package com.icehousecorp.ginanjar.rxdj.apis;
 
+import android.graphics.Picture;
+
 import com.icehousecorp.ginanjar.rxdj.models.Collections;
+import com.icehousecorp.ginanjar.rxdj.models.Pictures;
 
 import java.util.List;
 
@@ -18,6 +21,10 @@ public interface DjApi {
     @GET("/collections")
     public Observable<List<Collections>>
     getCollections();
+
+    @GET("/pictures")
+    public Observable<List<Pictures>>
+    getPictures();
 
     @POST("/collections")
     public Observable<Collections>
